@@ -32,8 +32,8 @@
               @{@"Crossword": @"crossword"},
               @{@"Sudoku": @"sudoku"},
               @{@"Word Roundup": @"wordroundup"},
-              @{@"Up & Down Words": @"upanddownwords"},
-              @{@"QuickCross": @"quickcross"}
+              @{@"Up and Down Words": @"upanddownwords"},
+              @{@"PlayFour": @"quickcross"},
               ]);
     return _games;
 }

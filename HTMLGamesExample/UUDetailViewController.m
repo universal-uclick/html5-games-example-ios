@@ -69,7 +69,7 @@
     NSString *gameTemplate = @"<section class='game-wrapper' style='text-align: center;'> \
             <script> \
                 var tag = document.createElement('script'); \
-                tag.src = 'http://10.168.32.71:3000/s.js'; \
+                tag.src = 'http://embed.universaluclick.com/s.js'; \
                 var aScriptTag = document.getElementsByTagName('script')[0]; \
                 aScriptTag.parentNode.insertBefore(tag, aScriptTag); \
                 var apicontainer; \
