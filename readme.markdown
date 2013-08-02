@@ -28,4 +28,4 @@ That string of HTML is then loaded into a `UIWebView` using the method `-[UIWebV
 
 ## Questions?
 
-Contact Universal Uclick Client Support if you need any assistance in implementing your HTML5 Games.
+Contact Universal Uclick Client Support if you need any assistance in implementing your HTML5 Games. If you have any other questions, please contact Universal Uclick's Sales department.
