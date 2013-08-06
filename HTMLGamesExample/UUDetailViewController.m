@@ -19,17 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     NSString *secretsFilePath = [[NSBundle mainBundle] pathForResource:@"Secrets" ofType:@"plist"];
     NSDictionary *secrets = [NSDictionary dictionaryWithContentsOfFile:secretsFilePath];
-    
+
     self.clientID = secrets[@"UUClientCode"];
     self.authorizationKey = secrets[@"UUAuthorizationKey"];
-    
+
     [self.view addSubview:self.webView];
     self.navigationItem.rightBarButtonItem = self.refreshButton;
     self.view.backgroundColor = [UIColor whiteColor];
-    
+
     self.title = @"Choose a game.";
 }
 
@@ -63,13 +63,19 @@
     [self.masterPopoverController dismissPopoverAnimated:YES];
 }
 
+#pragma mark - Orientation
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return YES;
+}
+
 #pragma mark - Methods
 
 - (NSString *)gameHtmlForKey:(NSString *)gameKey {
     NSString *gameTemplate = @"<section class='game-wrapper' style='text-align: center;'> \
             <script> \
                 var tag = document.createElement('script'); \
-                tag.src = 'http://embed.universaluclick.com/s.js'; \
+                tag.src = 'https://embed.universaluclick.com/s.js'; \
                 var aScriptTag = document.getElementsByTagName('script')[0]; \
                 aScriptTag.parentNode.insertBefore(tag, aScriptTag); \
                 var apicontainer; \
