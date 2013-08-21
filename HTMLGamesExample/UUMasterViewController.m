@@ -14,12 +14,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     // [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
-    
+
     self.clearsSelectionOnViewWillAppear = NO;
     self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
-    
+
     self.title = @"Games";
     self.detailViewController = (UUDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
@@ -33,7 +33,7 @@
               @{@"Sudoku": @"sudoku"},
               @{@"Word Roundup": @"wordroundup"},
               @{@"Up and Down Words": @"upanddownwords"},
-              @{@"PlayFour": @"quickcross"},
+              @{@"PlayFour": @"playfour"},
               ]);
     return _games;
 }
