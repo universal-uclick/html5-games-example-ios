@@ -22,7 +22,7 @@ The game engine loads itself via JavaScript into an `iframe` that the JavaScript
     - **Sudoku**: `sudoku`
     - **Word Roundup**: `wordroundup`
     - **Up and Down Words**: `upanddownwords`
-    - **PlayFour**: `quickcross`
+    - **PlayFour**: `playfour`
 
 That string of HTML is then loaded into a `UIWebView` using the method `-[UIWebView loadHTMLString:baseURL:]`, as demonstrated in `-[UUDetailViewController setGameKey:]`.
 
