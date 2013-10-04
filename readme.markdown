@@ -18,11 +18,11 @@ The game engine loads itself via JavaScript into an `iframe` that the JavaScript
 2. **Your Universal Uclick Client ID**. This will be given to you by Universal Uclick.
 3. **Your Authorization Key**. This will also be given to you by Universal Uclick.
 4. **The desired game key**. In this app, those keys are located at `-[UUMasterViewController games]`, or as follows:
-    - **Crossword**: `crossword`
-    - **Sudoku**: `sudoku`
-    - **Word Roundup**: `wordroundup`
-    - **Up and Down Words**: `upanddownwords`
-    - **PlayFour**: `playfour`
+    - **Crossword**: `crossword` or `fcx`
+    - **Sudoku**: `sudoku` or `sudoc`
+    - **Word Roundup**: `wordroundup` or `ucwr`
+    - **Up and Down Words**: `upanddownwords` or `ucudw`
+    - **PlayFour**: `playfour` or `pff`
 
 That string of HTML is then loaded into a `UIWebView` using the method `-[UIWebView loadHTMLString:baseURL:]`, as demonstrated in `-[UUDetailViewController setGameKey:]`.
 
